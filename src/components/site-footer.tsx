@@ -37,7 +37,16 @@ export function SiteFooter() {
           <div>
             <h2 className="text-sm font-semibold text-primary">Project resources</h2>
             <ul className="mt-3 space-y-2 text-sm text-muted">
-              <li>GitHub link pending</li>
+              <li>
+                <a
+                  href={site.discussionsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-sm hover:text-primary hover:underline"
+                >
+                  Suggest an Improvement
+                </a>
+              </li>
               <li>Contact information pending</li>
             </ul>
           </div>

@@ -28,6 +28,14 @@ export function HeroSection() {
           <ButtonLink href="/contribute" className="max-sm:px-3">
             Contribute Data
           </ButtonLink>
+          <ButtonLink
+            href={site.discussionsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="max-sm:px-3"
+          >
+            Suggest an Improvement
+          </ButtonLink>
         </div>
       </div>
 

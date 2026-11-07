@@ -5,6 +5,7 @@ export const site = {
   title: "CIVITA | Computational Modeling of Concrete",
   description:
     "CIVITA is an open scientific platform for experimental data, calibration, validation, and benchmarking of computational models for concrete.",
+  discussionsUrl: "https://github.com/civita-network/civita/discussions",
   logo: {
     src: "/images/civita-logo.png",
     alt: "CIVITA logo",
