@@ -11,7 +11,7 @@ export function HeroSection() {
       <div>
         <h1
           id="civita-heading"
-          className="max-w-3xl text-[clamp(2rem,5.5vw,3.75rem)] leading-[1.08] font-bold tracking-tight text-balance text-primary"
+          className="max-w-3xl text-[clamp(1.375rem,6.5vw,2rem)] leading-[1.08] font-bold tracking-tight text-balance text-primary sm:text-[clamp(2rem,5.5vw,3.25rem)]"
         >
           From Model Development to Predictive Engineering
         </h1>
