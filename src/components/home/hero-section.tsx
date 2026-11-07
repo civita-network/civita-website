@@ -13,7 +13,7 @@ export function HeroSection() {
           id="civita-heading"
           className="max-w-3xl text-[clamp(2rem,5.5vw,3.75rem)] leading-[1.08] font-bold tracking-tight text-balance text-primary"
         >
-          Computational Modeling of Concrete, Connected.
+          From Model Development to Predictive Engineering
         </h1>
         <h2 className="mt-5 text-2xl font-semibold tracking-tight text-primary sm:text-3xl">
           {site.name}
