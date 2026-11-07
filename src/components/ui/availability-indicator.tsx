@@ -2,7 +2,7 @@ import type { Application } from "@/config/applications";
 
 const labels = {
   available: "Available",
-  coming_soon: "Coming soon",
+  coming_soon: "Coming Soon",
 } satisfies Record<Application["status"], string>;
 
 export function AvailabilityIndicator({

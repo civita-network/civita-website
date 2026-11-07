@@ -17,11 +17,21 @@ export type Application = {
   | { status: "coming_soon"; externalUrl: ExternalUrl | null }
 );
 
+export function getApplicationUrl(application: Application): string | null {
+  if (application.status !== "available") return null;
+
+  const url = URL.parse(application.externalUrl);
+  return url?.protocol === "https:" || url?.protocol === "http:"
+    ? url.href
+    : null;
+}
+
 export const applications: readonly Application[] = [
   {
     id: "concrete-database-search",
     name: "Concrete Database Search",
-    description: "Discover and explore experimental concrete datasets.",
+    description:
+      "Discover and explore experimental concrete datasets, including material properties, specimen configurations, experimental procedures, and measured responses.",
     category: "Explore",
     externalUrl: null,
     status: "coming_soon",
@@ -31,7 +41,7 @@ export const applications: readonly Application[] = [
     id: "benchmarking",
     name: "Benchmarking",
     description:
-      "Explore benchmark specifications and compare computational results.",
+      "Explore standardized benchmark specifications and compare computational results across models, implementations, and software versions.",
     category: "Explore",
     externalUrl: null,
     status: "coming_soon",
@@ -41,7 +51,7 @@ export const applications: readonly Application[] = [
     id: "experimental-data-submission",
     name: "Experimental Data Submission",
     description:
-      "Contribute documented experimental datasets to the CIVITA repository.",
+      "Contribute documented experimental datasets to CIVITA using standardized data structures and submission procedures.",
     category: "Contribute",
     externalUrl: null,
     status: "coming_soon",
@@ -51,7 +61,7 @@ export const applications: readonly Application[] = [
     id: "computational-results-submission",
     name: "Computational Results Submission",
     description:
-      "Contribute simulation results with model, implementation, and provenance metadata.",
+      "Submit computational results together with model definitions, parameter sets, simulation configurations, and provenance information.",
     category: "Contribute",
     externalUrl: null,
     status: "coming_soon",

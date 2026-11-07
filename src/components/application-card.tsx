@@ -1,4 +1,8 @@
-import type { Application, ApplicationIcon } from "@/config/applications";
+import {
+  getApplicationUrl,
+  type Application,
+  type ApplicationIcon,
+} from "@/config/applications";
 import { AvailabilityIndicator } from "./ui/availability-indicator";
 import { ButtonLink } from "./ui/button";
 
@@ -11,9 +15,13 @@ const iconPaths: Record<ApplicationIcon, string> = {
 };
 
 export function ApplicationCard({ application }: { application: Application }) {
+  const url = getApplicationUrl(application);
+
   return (
-    <article className="flex h-full min-w-0 flex-col rounded-xl border border-border bg-surface p-5 shadow-sm sm:p-6">
-      <div className="flex flex-wrap items-start justify-between gap-3">
+    <article
+      className={`flex h-full min-w-0 flex-col rounded-xl border border-border bg-surface p-5 shadow-sm sm:p-6 ${url ? "hover:border-accent" : ""}`}
+    >
+      <div className="flex items-center justify-between gap-3">
         <span className="grid size-11 place-items-center rounded-lg bg-lavender text-primary">
           <svg
             aria-hidden="true"
@@ -28,26 +36,28 @@ export function ApplicationCard({ application }: { application: Application }) {
             <path d={iconPaths[application.icon]} />
           </svg>
         </span>
-        <AvailabilityIndicator status={application.status} />
+        <p className="text-xs font-semibold tracking-wide text-muted uppercase">
+          {application.category}
+        </p>
       </div>
-      <p className="mt-5 text-xs font-semibold tracking-wide text-muted uppercase">
-        {application.category}
-      </p>
-      <h3 className="mt-1 text-xl font-semibold text-primary">
+      <h3 className="mt-4 text-xl font-semibold text-primary">
         {application.name}
       </h3>
       <p className="mt-2 flex-1 leading-relaxed text-muted">
         {application.description}
       </p>
-      {application.status === "available" && (
-        <ButtonLink
-          href={application.externalUrl}
-          variant="secondary"
-          className="mt-5 self-start"
-        >
-          Open {application.name}
-        </ButtonLink>
-      )}
+      <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-3">
+        <AvailabilityIndicator status={url ? "available" : "coming_soon"} />
+        {url && (
+          <ButtonLink
+            href={url}
+            variant="secondary"
+            aria-label={`Open application: ${application.name}`}
+          >
+            Open application
+          </ButtonLink>
+        )}
+      </div>
     </article>
   );
 }
