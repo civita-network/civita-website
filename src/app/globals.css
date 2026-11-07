@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  --civita-primary: #303f76;
+  --civita-accent: #5966bc;
+  --civita-lavender: #e9eafe;
+  --civita-background: #f8f9fc;
+  --civita-slate: #202840;
+  --civita-white: #ffffff;
+}
+
+@theme inline {
+  --color-primary: var(--civita-primary);
+  --color-accent: var(--civita-accent);
+  --color-lavender: var(--civita-lavender);
+  --color-background: var(--civita-background);
+  --color-slate: var(--civita-slate);
+  --color-surface: var(--civita-white);
+  --color-border: color-mix(in srgb, var(--civita-primary) 16%, var(--civita-white));
+  --color-muted: color-mix(in srgb, var(--civita-slate) 78%, var(--civita-white));
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--civita-accent);
+    outline-offset: 4px;
+  }
+}
+
+@utility site-container {
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 3rem);
+}
