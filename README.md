@@ -29,6 +29,10 @@ Open [the local website](http://localhost:3000). Run `npm run lint` and
   an application, add its verified external URL and set its status to
   `available`.
 
+## Deployment
+
+The CIVITA website is developed using Next.js and deployed through Vercel. The production deployment is connected to the `civita-network/civita-website` GitHub repository.
+
 ## Deployment configuration
 
 For a future Vercel deployment, select this directory as the project root and
