@@ -1,8 +1,9 @@
 # CIVITA website
 
 CIVITA is the Computational Infrastructure for Validation, Integration,
-Testing, and Assessment. This project contains the public website foundation,
-built with the Next.js App Router, TypeScript, and Tailwind CSS.
+Testing, and Assessment of Concrete Computational Frameworks. This project
+contains the public website foundation, built with the Next.js App Router,
+TypeScript, and Tailwind CSS.
 
 ## Local development
 

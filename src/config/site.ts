@@ -1,7 +1,7 @@
 export const site = {
   name: "CIVITA",
   fullName:
-    "Computational Infrastructure for Validation, Integration, Testing, and Assessment",
+    "Computational Infrastructure for Validation, Integration, Testing, and Assessment of Concrete Computational Frameworks",
   title: "CIVITA | Computational Modeling of Concrete",
   description:
     "CIVITA is an open scientific platform for experimental data, calibration, validation, and benchmarking of computational models for concrete.",
