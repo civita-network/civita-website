@@ -5,27 +5,6 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { applications } from "@/config/applications";
 import { site } from "@/config/site";
 
-const resources = [
-  {
-    title: "Documentation",
-    description:
-      "Access user guides, data formats, submission procedures, and scientific standards.",
-    href: "/documentation",
-  },
-  {
-    title: "About CIVITA",
-    description:
-      "Learn about CIVITA’s objectives, scientific scope, and long-term vision.",
-    href: "/about",
-  },
-  {
-    title: "Community and Governance",
-    description:
-      "Learn about scientific contributions, collaboration, and governance principles.",
-    href: "/about",
-  },
-];
-
 export default function HomePage() {
   return (
     <>
@@ -75,28 +54,6 @@ export default function HomePage() {
         >
           Learn More About CIVITA <span aria-hidden="true">→</span>
         </Link>
-      </section>
-
-      <section aria-labelledby="resources-heading" className="mt-12 sm:mt-16">
-        <SectionHeading id="resources-heading" title="Resources" />
-        <ul className="mt-5 grid gap-3 md:grid-cols-3">
-          {resources.map(({ title, description, href }) => (
-            <li key={title}>
-              <Link
-                href={href}
-                className="group block h-full rounded-lg border border-border bg-surface p-4 hover:border-accent sm:p-5"
-              >
-                <h3 className="flex items-baseline justify-between gap-3 font-semibold text-primary">
-                  <span className="group-hover:underline">{title}</span>
-                  <span aria-hidden="true" className="text-accent">→</span>
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
-                  {description}
-                </p>
-              </Link>
-            </li>
-          ))}
-        </ul>
       </section>
     </>
   );
