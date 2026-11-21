@@ -1,7 +1,7 @@
 {
   "metadata": {
     "sourceUrl": "https://github.com/civita-network/civita-documentation/blob/main/working_group.tex",
-    "sourceCommitSha": "42946605e60e1fb1a4f8b94f3be7ed89cf70d71a"
+    "sourceCommitSha": "60a126ceb6d9aebcb60d55950ad92d61b2f26e9f"
   },
   "members": [
     {
@@ -181,11 +181,6 @@
     },
     {
       "name": "Yuchen Li",
-      "institution": "Northwestern University",
-      "country": "United States"
-    },
-    {
-      "name": "test test",
       "institution": "Northwestern University",
       "country": "United States"
     }
