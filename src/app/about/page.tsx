@@ -13,7 +13,7 @@ export default function AboutPage() {
       <header className="border-b border-border pb-7 sm:pb-9">
         <SectionHeading
           as="h1"
-          title="From Model Development to Predictive Engineering"
+          title="A Community Initiative"
         />
       </header>
 
