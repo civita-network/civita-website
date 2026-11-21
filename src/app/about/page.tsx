@@ -13,7 +13,6 @@ export default function AboutPage() {
       <header className="border-b border-border pb-7 sm:pb-9">
         <SectionHeading
           as="h1"
-          eyebrow="About CIVITA"
           title="From Model Development to Predictive Engineering"
         />
       </header>
