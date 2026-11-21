@@ -4,7 +4,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 const description =
   "CIVITA will accept documented experimental datasets and simulation results with model, implementation, and provenance information.";
 
-export const metadata: Metadata = { title: "Contribute", description };
+export const metadata: Metadata = { description };
 
 export default function ContributePage() {
   return (

@@ -5,7 +5,7 @@ import workingGroup from "@/data/working-group.json";
 const description =
   "Learn about the Grand Challenge, the CIVITA Network, and the international Working Group advancing predictive modeling for concrete and concrete structures.";
 
-export const metadata: Metadata = { title: "About", description };
+export const metadata: Metadata = { description };
 
 export default function AboutPage() {
   return (
