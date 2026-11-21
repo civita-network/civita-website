@@ -26,7 +26,7 @@ export default function AboutPage() {
           id="grand-challenge-heading"
           title="The Grand Challenge"
         />
-        <div className="mt-4 max-w-[72ch] space-y-4 leading-relaxed">
+        <div className="mt-4 space-y-4 leading-relaxed">
           <p>
             The{" "}
             <strong>
@@ -65,7 +65,7 @@ export default function AboutPage() {
         className="mt-10 border-t border-border pt-8 sm:mt-12 sm:pt-10"
       >
         <SectionHeading id="civita-network-heading" title="The CIVITA Network" />
-        <div className="mt-4 max-w-[72ch] space-y-4 leading-relaxed">
+        <div className="mt-4 space-y-4 leading-relaxed">
           <p>
             <strong>
               CIVITA (Computational Infrastructure for Validation, Integration,
@@ -104,7 +104,7 @@ export default function AboutPage() {
         className="mt-10 border-t border-border pt-8 sm:mt-12 sm:pt-10"
       >
         <SectionHeading id="working-group-heading" title="The Working Group" />
-        <div className="mt-4 max-w-[72ch] space-y-4 leading-relaxed">
+        <div className="mt-4 space-y-4 leading-relaxed">
           <p>
             The Grand Challenge is supported by an international Working Group of
             researchers and professionals representing universities, research
@@ -195,12 +195,6 @@ export default function AboutPage() {
               ))}
             </tbody>
           </table>
-          <a
-            href={workingGroup.metadata.sourceUrl}
-            className="mt-2 inline-flex min-h-11 items-center rounded-sm text-sm font-semibold text-primary underline decoration-accent underline-offset-4 hover:decoration-2"
-          >
-            Official Working Group Roster
-          </a>
         </div>
       </section>
     </article>
