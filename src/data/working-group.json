@@ -1,52 +1,52 @@
 {
   "metadata": {
     "sourceUrl": "https://github.com/civita-network/civita-documentation/blob/main/working_group.tex",
-    "extractedOn": "2026-11-21"
+    "sourceCommitSha": "fb08085e10647b12bfcd957e00b819e60b0529a9"
   },
   "members": [
     {
       "name": "Ab van den Bos",
-      "institution": "NLyseConsultants",
+      "institution": "NLyse Consultants",
       "country": "Netherlands"
     },
     {
       "name": "Ali Behnood",
-      "institution": "University of Missisipi",
+      "institution": "University of Mississippi",
       "country": "United States"
     },
     {
       "name": "Anca Ferche",
-      "institution": "UT at Austin",
+      "institution": "The University of Texas at Austin",
       "country": "United States"
     },
     {
       "name": "Ann Goodell",
-      "institution": "Cal Poly",
+      "institution": "California Polytechnic State University, San Luis Obispo",
       "country": "United States"
     },
     {
       "name": "Christian Carloni",
-      "institution": "Case Western University",
+      "institution": "Case Western Reserve University",
       "country": "United States"
     },
     {
       "name": "Constantino Menna",
-      "institution": "University of Naples",
+      "institution": "University of Naples Federico II",
       "country": "Italy"
     },
     {
       "name": "Dimitrios Kalliontzis",
-      "institution": "University of Huston",
+      "institution": "University of Houston",
       "country": "United States"
     },
     {
       "name": "Ebenezer Fanijo",
-      "institution": "Georgia Tech",
+      "institution": "Georgia Institute of Technology",
       "country": "United States"
     },
     {
       "name": "Ehab Hamed",
-      "institution": "The Un. of New South Wales",
+      "institution": "University of New South Wales",
       "country": "Australia"
     },
     {
@@ -56,7 +56,7 @@
     },
     {
       "name": "Erik Schlangen",
-      "institution": "TU Delft",
+      "institution": "Delft University of Technology",
       "country": "Netherlands"
     },
     {
@@ -66,7 +66,7 @@
     },
     {
       "name": "Gabriel Ackall",
-      "institution": "Virginia tech",
+      "institution": "Virginia Polytechnic Institute and State University",
       "country": "United States"
     },
     {
@@ -81,7 +81,7 @@
     },
     {
       "name": "Jan Cervenka",
-      "institution": "Cervenka consulting",
+      "institution": "Červenka Consulting",
       "country": "Czechia"
     },
     {
@@ -101,27 +101,27 @@
     },
     {
       "name": "John Bolander",
-      "institution": "UC Davis",
+      "institution": "University of California, Davis",
       "country": "United States"
     },
     {
       "name": "Jorg Unger",
-      "institution": "BAM",
+      "institution": "Federal Institute for Materials Research and Testing (BAM)",
       "country": "Germany"
     },
     {
       "name": "Kamran Aghaee",
-      "institution": "West Virginia State Uni.",
+      "institution": "West Virginia State University",
       "country": "United States"
     },
     {
       "name": "Kimberly Kurtis",
-      "institution": "Georgia Tech",
+      "institution": "Georgia Institute of Technology",
       "country": "United States"
     },
     {
       "name": "Luca Sorelli",
-      "institution": "Laval University",
+      "institution": "Université Laval",
       "country": "Canada"
     },
     {
@@ -131,7 +131,7 @@
     },
     {
       "name": "Maria Juenger",
-      "institution": "UT Austin",
+      "institution": "The University of Texas at Austin",
       "country": "United States"
     },
     {
@@ -141,7 +141,7 @@
     },
     {
       "name": "Mohammed Alnaggar",
-      "institution": "ORNL",
+      "institution": "Oak Ridge National Laboratory",
       "country": "United States"
     },
     {
@@ -156,7 +156,7 @@
     },
     {
       "name": "Nishant Garg",
-      "institution": "UIUC",
+      "institution": "University of Illinois Urbana-Champaign",
       "country": "United States"
     },
     {
@@ -166,7 +166,7 @@
     },
     {
       "name": "Shady Gomaa",
-      "institution": "University of Alabama",
+      "institution": "The University of Alabama",
       "country": "United States"
     },
     {
@@ -176,7 +176,7 @@
     },
     {
       "name": "Viktor Gribniak",
-      "institution": "Vilnius Gediminas Tech. Un.",
+      "institution": "Vilnius Gediminas Technical University",
       "country": "Lithuania"
     },
     {

@@ -1,0 +1,61 @@
+name: Sync Working Group roster
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-working-group-main
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Synchronize and push roster
+        shell: bash
+        run: |
+          roster=src/data/working-group.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          for attempt in 1 2 3; do
+            git fetch origin refs/heads/main
+            base=$(git rev-parse FETCH_HEAD)
+            git switch --detach "$base"
+
+            npm ci --ignore-scripts --no-audit --no-fund
+            node scripts/sync-working-group.mjs
+            if git diff --quiet -- "$roster"; then
+              exit 0
+            fi
+
+            git add -- "$roster"
+            git commit -m 'Sync Working Group roster from CIVITA documentation'
+            if git push origin HEAD:refs/heads/main; then
+              exit 0
+            fi
+
+            git fetch origin refs/heads/main
+            if [[ "$(git rev-parse FETCH_HEAD)" == "$base" ]]; then
+              echo 'Push failed without a concurrent update. Check the GitHub push error above.'
+              exit 1
+            fi
+            echo "main advanced during attempt $attempt. Recomputing the roster from the latest main."
+          done
+
+          echo 'Could not push the roster after three concurrent updates to main.'
+          exit 1

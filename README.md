@@ -17,6 +17,24 @@ npm run dev
 Open [the local website](http://localhost:3000). Run `npm run lint` and
 `npm run build` to check the project. Use `npm start` to serve a production build.
 
+## Working Group roster
+
+Maintain the authoritative roster in [`civita-documentation/working_group.tex`](https://github.com/civita-network/civita-documentation/blob/main/working_group.tex).
+Push Overleaf edits to the documentation repository's `main` branch before
+synchronizing the website. The **Sync Working Group roster** workflow runs
+daily at 06:00 UTC. You can also run it manually from the website repository's
+**Actions** tab on `main`.
+
+The About page reads the generated `src/data/working-group.json`. Update the
+LaTeX source for roster edits. The website displays member names, affiliations,
+and countries and omits email addresses. The JSON records the source commit
+used for the last roster update.
+
+After `npm ci`, run `node scripts/sync-working-group.mjs` to sync locally or
+`npm test` to run the offline tests. Invalid rows, duplicate names, and
+reductions of more than 20% fail synchronization and preserve the existing
+roster.
+
 ## Project layout
 
 - `src/app/` contains Home, Explore, Contribute, Documentation, and About. The

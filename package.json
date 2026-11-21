@@ -9,7 +9,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "node --test"
   },
   "dependencies": {
     "next": "16.4.5",
@@ -23,6 +24,7 @@
     "@types/react-dom": "^19.3.0",
     "eslint": "^9.39.0",
     "eslint-config-next": "16.4.5",
+    "i18n-iso-countries": "7.14.0",
     "tailwindcss": "4.3.5",
     "typescript": "~5.9.3"
   }
