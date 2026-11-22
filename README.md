@@ -58,3 +58,9 @@ For a future Vercel deployment, select this directory as the project root and
 use the Next.js framework preset. Set `SITE_URL` to the full production origin
 if you want to override the Vercel production domain used for Open Graph image
 URLs. Local builds default to `http://localhost:3000`.
+
+## License and Copyright
+
+Original website software and scripts are licensed under [MIT](LICENSE). CIVITA-authored explanatory text follows CC BY 4.0. The CIVITA identity assets and imported working-group roster have separate rights. See [the local license scope](LICENSING.md). Copyright in original software contributions remains with the respective contributors or other applicable rights holders.
+
+See the [CIVITA licensing policy](https://github.com/civita-network/civita/blob/main/LICENSING.md), [authors and attribution](https://github.com/civita-network/civita/blob/main/AUTHORS.md), and [contribution guidelines](https://github.com/civita-network/civita/blob/main/CONTRIBUTING.md).
