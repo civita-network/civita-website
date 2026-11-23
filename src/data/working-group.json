@@ -1,7 +1,7 @@
 {
   "metadata": {
     "sourceUrl": "https://github.com/civita-network/civita-documentation/blob/main/working_group.tex",
-    "sourceCommitSha": "01f0a2fa5fb65793201f6a1124435cfa660e885d"
+    "sourceCommitSha": "4c9063f079e0f2db8e2e6baf52f5a6c7d11cd22a"
   },
   "members": [
     {
@@ -28,6 +28,11 @@
       "name": "Christian Carloni",
       "institution": "Case Western Reserve University",
       "country": "United States"
+    },
+    {
+      "name": "Antonio Cibelli",
+      "institution": "University of Naples Federico II",
+      "country": "Italy"
     },
     {
       "name": "Constantino Menna",
