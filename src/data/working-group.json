@@ -1,7 +1,7 @@
 {
   "metadata": {
     "sourceUrl": "https://github.com/civita-network/civita-documentation/blob/main/working_group.tex",
-    "sourceCommitSha": "4c9063f079e0f2db8e2e6baf52f5a6c7d11cd22a"
+    "sourceCommitSha": "812172314c26dc2111877812e9184b5804cec053"
   },
   "members": [
     {
@@ -85,6 +85,11 @@
       "country": "Italy"
     },
     {
+      "name": "Imad Abuneim",
+      "institution": "The University of Texas at Austin",
+      "country": "Italy"
+    },
+    {
       "name": "Jan Cervenka",
       "institution": "Červenka Consulting",
       "country": "Czechia"
@@ -142,6 +147,11 @@
     {
       "name": "Matthew Soltani",
       "institution": "Bradley University",
+      "country": "United States"
+    },
+    {
+      "name": "Md Asifur Rahman",
+      "institution": "The University of Alabama",
       "country": "United States"
     },
     {
